@@ -1,0 +1,9 @@
+arachniweb:
+  image: lgazo/debian-arachni
+  #entrypoint: arachni_rpcd
+  #entrypoint: arachni_console
+  expose:
+    - 9292
+  environment:
+    - SERVICE_NAME=arachni-web
+  command: "--host 0.0.0.0"
